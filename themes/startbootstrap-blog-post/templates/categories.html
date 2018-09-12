@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Categorías - {{ SITENAME }}{% endblock %}
+
+{% block meta_tags %}
+    <meta name="description" content="Publicaciones por categorías.">
+    <meta name="keywords" content="">
+    <meta name="author" content="{{ AUTHOR }}">
+    <meta itemprop="name" content="Categorías">
+    <meta itemprop="description" content="Publicaciones por categorías.">
+    <meta itemprop="image" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="{{ SITETWITTER }}">
+    <meta name="twitter:title" content="Categorías">
+    <meta name="twitter:description" content="Publicaciones por categorías.">
+    <meta name="twitter:image:src" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta property="og:title" content="Categorías">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ SITEURL }}/{{ output_file }}">
+    <meta property="og:image" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta property="og:description" content="Publicaciones por categorías.">
+    <meta property="og:site_name" content="{{ SITENAME }}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="mt-4">Categorías</h1>
+    <ul>
+        {% for category, articles in categories|sort %}
+            <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> ({{ articles|count }})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
