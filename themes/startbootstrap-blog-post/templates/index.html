@@ -28,14 +28,20 @@
     <h1 class="mt-4">{% block content_title %}{% endblock %}</h1>
     {% if articles %}
         {% for article in articles_page.object_list %}
-            <a href="{{ SITEURL }}/{{ article.url }}">
-                <h2>{{ article.title }}</h2>
-                {% if article.image %}
-                <img class="img-fluid rounded" src="{{ SITEURL }}/{{ article.url }}/{{ article.image }}" alt="Imagen previa">
-                {% endif %}
-            </a>
-            {{ article.summary }}
-            <hr>
+            {% if article.preview %}
+            <div class="index-list-preview">
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    <img src="{{ SITEURL }}/{{ article.url }}/{{ article.preview }}" alt="Imagen previa">
+                </a>
+            </div>
+            {% endif %}
+            <div class="index-list-text">
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    <h2>{{ article.title }}</h2>
+                </a>
+                {{ article.summary }}
+            </div>
+            <div class="index-list-clean"></div>
         {% endfor %}
         {% if articles_page %}
         <nav>

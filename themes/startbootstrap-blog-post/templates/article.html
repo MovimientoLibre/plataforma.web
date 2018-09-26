@@ -3,22 +3,34 @@
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 
 {% block meta_tags %}
-    <meta name="description" content="{{ article.summary }}">
-    <meta name="keywords" content="{{ article.tags }}">
+    <meta name="description" content="{{ article.summary|striptags }}">
+    <meta name="keywords" content="{{ [article.tags|join(', '), article.category]|join(', ') }}">
     <meta name="author" content="{{ article.author.name }}">
     <meta itemprop="name" content="{{ article.title }}">
-    <meta itemprop="description" content="{{ article.summary }}">
+    <meta itemprop="description" content="{{ article.summary|striptags }}">
+    {% if article.preview %}
+    <meta itemprop="image" content="{{ article.preview }}">
+    {% elif article.image %}
     <meta itemprop="image" content="{{ article.image }}">
+    {% endif %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ SITETWITTER }}">
     <meta name="twitter:title" content="{{ article.title }}">
-    <meta name="twitter:description" content="{{ article.summary }}">
+    <meta name="twitter:description" content="{{ article.summary|striptags }}">
+    {% if article.preview %}
+    <meta name="twitter:image:src" content="{{ article.preview }}">
+    {% elif article.image %}
     <meta name="twitter:image:src" content="{{ article.image }}">
+    {% endif %}
     <meta property="og:title" content="{{ article.title }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ article.url }}">
+    {% if article.preview %}
+    <meta property="og:image" content="{{ article.preview }}">
+    {% elif article.image %}
     <meta property="og:image" content="{{ article.image }}">
-    <meta property="og:description" content="{{ article.summary }}">
+    {% endif %}
+    <meta property="og:description" content="{{ article.summary|striptags }}">
     <meta property="og:site_name" content="{{ SITENAME }}">
 {% endblock %}
 

@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 # Sitio web
 SITEURL = 'http://www.movimientolibre.com'
 SITENAME = 'Movimiento Libre'
-SITELOGO = 'imagenes/movimientolibre.png'
+SITELOGO = 'theme/images/movimientolibre.png'
 SITEDESCRIPTION = 'Colección de ideas.'
 SITETWITTER = '@guivaloz'
 
