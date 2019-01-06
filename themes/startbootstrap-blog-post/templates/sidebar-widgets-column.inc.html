@@ -1,28 +1,31 @@
-
-                <div class="card my-4">
-                    <h5 class="card-header">A cerca de Movimiento Libre</h5>
-                    <div class="card-body">
-                        Es un sitio web que busca divulgar conocimiento
-                        y promover el uso de software libre. Su creador
-                        es reconocido por ser un desarrollador que
-                        fabrica estas herramientas tanto para entidades
-                        públicas como privadas. Le invito a conocer el
-                        portafolio:
-                        <ul>
-                            <li><a href="{{ SITEURL }}/portafolio/soluciones/">Soluciones en software a la medida</a></li>
-                            <li>Plataformas web</li>
-                            <li>Instalación y mantenimiento de sistemas operativos libres en servidores</li>
-                        </ul>
+                <!-- Sidebar start -->
+                <aside>
+                    <div class="card my-4">
+                        <h5 class="card-header">A cerca de Movimiento Libre</h5>
+                        <div class="card-body">
+                            Es un sitio web que busca divulgar conocimiento
+                            y promover el uso de software libre. Su creador
+                            es reconocido por ser un desarrollador que
+                            fabrica estas herramientas tanto para entidades
+                            públicas como privadas. Le invito a conocer el
+                            portafolio:
+                            <ul>
+                                <li><a href="{{ SITEURL }}/portafolio/soluciones/">Soluciones en software a la medida</a></li>
+                                <li>Plataformas web</li>
+                                <li>Instalación y mantenimiento de sistemas operativos libres en servidores</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card my-4">
-                    <h5 class="card-header">Etiquetas</h5>
-                    <div class="card-body">
-                        <ul class="list-unstyled mb-0">
-                            {% for tag, null in tags|sort %}
-                            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
-                            {% endfor %}
-                        </ul>
+                    <div class="card my-4">
+                        <h5 class="card-header">Etiquetas</h5>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                {% for tag, null in tags|sort %}
+                                <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                </aside>
+                <!-- Sidebar ends -->
+

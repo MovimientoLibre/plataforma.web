@@ -10,7 +10,7 @@ SITEDESCRIPTION = 'Colección de ideas.'
 SITETWITTER = '@guivaloz'
 
 # Autor
-AUTHOR = 'Guillermo Valdés Lozano'
+AUTHOR = 'Guillermo Valdés Lozano (guivaloz)'
 
 # Directorio donde esta el contenido
 PATH = 'content'
@@ -26,8 +26,13 @@ PAGE_PATHS = ['licencias', 'portafolio']
 STATIC_PATHS = ['CNAME', 'favicon.ico', 'LICENSE', 'README.md', 'robots.txt',
                 'apuntes', 'articulos', 'presentaciones', 'portafolio']
 
+# Encabezados para las categorías
+CATEGORIES_TITLES = {'apuntes': 'Apuntes',
+                     'articulos': 'Artículos',
+                     'presentaciones': 'Presentaciones'}
+
 # Usar el nombre del directorio como la categoría
-USE_FOLDER_AS_CATEGORY = True
+USE_FOLDER_AS_CATEGORY = False
 
 # Los artículos van en directorios por categoria/titulo/
 ARTICLE_URL = '{category}/{slug}/'
@@ -37,41 +42,20 @@ ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 PAGE_URL = '{category}/{slug}/'
 PAGE_SAVE_AS = '{category}/{slug}/index.html'
 
-# Encabezados para las categorías
-CATEGORIES_TITLES = {'apuntes': 'Apuntes',
-                     'articulos': 'Artículos',
-                     'presentaciones': 'Presentaciones'}
-
 # Tema
 THEME = 'themes/startbootstrap-blog-post'
-
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
 
 # Lenguaje y zona horaria
 DEFAULT_LANG = 'es'
 TIMEZONE = 'America/Mexico_City'
 
-# Borrar toda la salida,
-# puede borrar directorios ocultos como .git, use si está seguro
-DELETE_OUTPUT_DIRECTORY = False
-
-# Para desarrollo los vinculos son relativos
+# Para desarrollo, los vinculos son relativos
 RELATIVE_URLS = True
 
 # Para desarrollo, se desactiva la paginacion
 DEFAULT_PAGINATION = False
-#DEFAULT_PAGINATION = 8
-#DEFAULT_ORPHANS = 2
 
-# Para desarrollo se desactiva la generacion de feeds
+# Para desarrollo, se desactiva la generacion de feeds
 FEED_ALL_ATOM = None
 FEED_ALL_RSS = None
 AUTHOR_FEED_ATOM = None
@@ -84,7 +68,7 @@ TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
 
 # Para desarrollo, recomendado mantener en falso
+DELETE_OUTPUT_DIRECTORY = True
 LOAD_CONTENT_CACHE = True
-
-# Para desarrollo, no usar dependencias en Internet
+OUTPUT_RETENTION = ['.git', '.gitignore']
 USE_REMOTE_SERVICES = False

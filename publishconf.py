@@ -23,8 +23,8 @@ TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
 
 # Feed options
-FEED_MAX_ITEMS = 24
-RSS_FEED_SUMMARY_ONLY = True
+FEED_MAX_ITEMS = 4
+RSS_FEED_SUMMARY_ONLY = False
 
 # Para publicar, los URLs son absolutos
 RELATIVE_URLS = False

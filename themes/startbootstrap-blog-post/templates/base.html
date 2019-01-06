@@ -26,58 +26,20 @@
 {% endif %}
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ SITEURL }}/category/apuntes.html">Apuntes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ SITEURL }}/category/articulos.html">Artículos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ SITEURL }}/category/presentaciones.html">Presentaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ SITEURL }}/portafolio/contacto/">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+{% include 'navigation.html' %}
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                {% block content %}{% endblock %}
+{% block content %}{% endblock %}
             </div>
             <div class="col-md-4">
-                {% include 'sidebar-widgets-column.inc.html' %}
+{% include 'sidebar-widgets-column.inc.html' %}
             </div>
         </div>
     </div>
-
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="copyright text-muted">
-                Copyright &copy; 2006-2018 Guillermo Valdés Lozano.<br>
-                Se otorga permiso para copiar, distribuir y/o modificar estos documentos.
-                Protegidos por la licencia <a href="{{ SITEURL }}/licencias/gfdl-es/">GFDL</a>.<br>
-                Sitio web elaborado con <a href="http://getpelican.com/">Pelican</a>,
-                que es programado en <a href="http://python.org/">Python</a>.
-                Tema <a href="https://startbootstrap.com/template-overviews/blog-post/">Blog post</a>
-                creado por <a href="https://startbootstrap.com/">Start Bootstrap</a>.
-            </p>
-        </div>
-    </footer>
-
+{% include 'footer.html' %}
     <script src="{{ SITEURL }}/theme/vendor/jquery/jquery.min.js"></script>
     <script src="{{ SITEURL }}/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
