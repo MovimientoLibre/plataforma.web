@@ -4,6 +4,8 @@ Summary: ¿Qué sería de nuestra ciudad/estado/país/mundo si todo profesionist
 Tags: educación
 Date: 2014-05-11 21:00
 Modified: 2014-05-11 21:00
+Category: articulos
+Preview: preview.jpg
 
 
 _Saber programar es conocer diferencia entre ver un reloj desde afuera y saber cómo funciona en su interior._

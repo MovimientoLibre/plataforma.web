@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}
-    {{ SITENAME }}
-{% endblock %}
+{% block title %}{{ SITENAME }}{% endblock %}
 
 {% block meta_tags %}
     {% if output_file == 'index.html' %}
@@ -45,15 +43,17 @@
 {% endblock %}
 
 {% block content %}
-    <h1 class="mt-4">{% block content_title %}{% endblock %}</h1>
+    {% if content_title %}
+            <h1 class="mt-4">{% block content_title %}{% endblock %}</h1>
+    {% endif %}
     {% if articles %}
         {% for article in articles_page.object_list %}
             {% if article.preview %}
-            <div class="index-list-preview">
-                <a href="{{ SITEURL }}/{{ article.url }}">
-                    <img src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Imagen previa">
-                </a>
-            </div>
+                <div class="index-list-preview">
+                    <a href="{{ SITEURL }}/{{ article.url }}">
+                        <img src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Imagen previa">
+                    </a>
+                </div>
             {% endif %}
             <div class="index-list-text">
                 <a href="{{ SITEURL }}/{{ article.url }}">

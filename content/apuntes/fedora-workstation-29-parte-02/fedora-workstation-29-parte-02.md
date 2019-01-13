@@ -3,7 +3,7 @@ Slug: fedora-workstation-29-parte-02
 Summary: Listo los comandos de instalación del software (preferido por el autor) en Fedora Linux 29 con KDE.
 Tags: fedora, gnu linux
 Date: 2019-01-05 17:40
-Modified: 2019-01-05 17:40
+Modified: 2019-01-10 16:30
 Category: apuntes
 Preview: preview.png
 Image: imagen.jpg
@@ -30,8 +30,6 @@ Instale LaTeX...
 
     # dnf search texlive-scheme
     # dnf install texlive-scheme-tetex
-    # dnf install texlive-scheme-medium
-    # dnf install texlive-scheme-tetex
     # dnf install texlive-collection-latexextra
     # dnf install texlive-collection-pstricks
     # dnf install texlive-babel-spanish texlive-babel-spanish-doc texlive-hyphen-spanish
@@ -49,7 +47,6 @@ Instale utilerías...
     # dnf install pwgen
     # dnf install youtube-dl
     # dnf install hwinfo
-    # dnf install fuse-exfat exfat-utils
 
 Instale software de KDE...
 
@@ -114,6 +111,7 @@ Para mi equipo, requiero el controlador _anterior_ y binario NVIDIA...
 
 Instale más programas de RPM Fusion...
 
+    # dnf install fuse-exfat exfat-utils
     # dnf install ffmpeg ffmpegthumbs
     # dnf install mplayer mencoder
     # dnf install audacity-freeworld

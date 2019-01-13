@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 SITEURL = 'http://www.movimientolibre.com'
 SITENAME = 'Movimiento Libre'
 SITELOGO = 'theme/images/movimientolibre.png'
-SITEDESCRIPTION = 'Colección de ideas.'
+SITEDESCRIPTION = 'Colección de ideas'
 SITETWITTER = '@guivaloz'
 
 # Autor
@@ -43,7 +43,7 @@ PAGE_URL = '{category}/{slug}/'
 PAGE_SAVE_AS = '{category}/{slug}/index.html'
 
 # Tema
-THEME = 'themes/startbootstrap-blog-post'
+THEME = 'themes/bootstrap-4'
 
 # Lenguaje y zona horaria
 DEFAULT_LANG = 'es'
