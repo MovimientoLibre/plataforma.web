@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 SITEURL = 'http://www.movimientolibre.com'
 SITENAME = 'Movimiento Libre'
 SITELOGO = 'theme/images/movimientolibre.png'
-SITEDESCRIPTION = 'Colección de ideas'
+SITEDESCRIPTION = 'Plataforma de divulgación de conocimiento libre por Ing. Guillermo Valdés Lozano (guivaloz)'
 SITETWITTER = '@guivaloz'
 
 # Autor
@@ -55,7 +55,19 @@ RELATIVE_URLS = True
 # Para desarrollo, se desactiva la paginacion
 DEFAULT_PAGINATION = False
 
-# Para desarrollo, se desactiva la generacion de feeds
+# Para desarrollo, no hay cargas desde Internet
+USE_REMOTE_SERVICES = False
+
+# Para desarrollo, borrar todo output
+DELETE_OUTPUT_DIRECTORY = True
+
+# No eliminar de output los siguientes directorios y archivos
+OUTPUT_RETENTION = ['.git', '.gitignore']
+
+# Siempre aprovechar lo que se tenga en caché
+LOAD_CONTENT_CACHE = True
+
+# Para desarrollo se desactiva la generacion de feeds
 FEED_ALL_ATOM = None
 FEED_ALL_RSS = None
 AUTHOR_FEED_ATOM = None
@@ -66,9 +78,3 @@ TAG_FEED_ATOM = None
 TAG_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
-
-# Para desarrollo, recomendado mantener en falso
-DELETE_OUTPUT_DIRECTORY = True
-LOAD_CONTENT_CACHE = True
-OUTPUT_RETENTION = ['.git', '.gitignore']
-USE_REMOTE_SERVICES = False

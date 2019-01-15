@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/screen.css">
 {% if USE_REMOTE_SERVICES %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
-{% include 'google-analytics.html' %}
+{%   include 'google-analytics.html' %}
 {% endif %}
   </head>
   <body>
 {% include 'navigation.html' %}
     <div class="container">
 {% if output_file == 'index.html' %}
-{% include 'header-welcome.html' %}
+{%   include 'header-welcome.html' %}
 {% endif %}
       <div class="row">
         <div class="col-sm-8">
@@ -38,7 +38,9 @@
           <aside>
 {% include 'aside-about.html' %}
 {% include 'aside-tags.html' %}
-{% include 'aside-search.html' %}
+{% if USE_REMOTE_SERVICES %}
+{%   include 'aside-search.html' %}
+{% endif %}
           </aside>
         </div>
       </div>

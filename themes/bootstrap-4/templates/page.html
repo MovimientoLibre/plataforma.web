@@ -35,7 +35,7 @@
 {% endblock %}
 
 {% block content %}
-          <main>
+          <article class="page-post">
             <script type="application/ld+json">
             {
                 "@context": "http://schema.org",
@@ -66,9 +66,7 @@
                 "url": "{{ SITEURL }}/{{ page.url }}"
             }
             </script>
-            <div class="page-post">
-              <h2 class="page-post-title">{{ page.title }}</h2>
+            <h2 class="page-post-title">{{ page.title }}</h2>
 {{ page.content }}
-            </div>
-          </main>
+          </article>
 {% endblock %}

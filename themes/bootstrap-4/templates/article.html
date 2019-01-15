@@ -35,7 +35,7 @@
 {% endblock %}
 
 {% block content %}
-          <article>
+          <article class="article-post">
             <script type="application/ld+json">
             {
                 "@context": "http://schema.org",
@@ -66,10 +66,8 @@
                 "url": "{{ SITEURL }}/{{ article.url }}"
             }
             </script>
-            <div class="article-post">
-              <h2 class="article-post-title">{{ article.title }}</h2>
-              <p class="article-post-meta">{{ article.author }}<br>{{ article.date|strftime('%d %B %Y') }}</p>
+            <h2 class="article-post-title">{{ article.title }}</h2>
+            <p class="article-post-meta">{{ article.author }}<br>{{ article.date|strftime('%d %B %Y') }}</p>
 {{ article.content }}
-            </div>
           </article>
 {% endblock %}
