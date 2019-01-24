@@ -3,13 +3,13 @@ Slug: fedora-workstation-29-parte-02
 Summary: Listo los comandos de instalación del software (preferido por el autor) en Fedora Linux 29 con KDE.
 Tags: fedora, gnu linux
 Date: 2019-01-05 17:40
-Modified: 2019-01-10 16:30
+Modified: 2019-01-24 10:05
 Category: apuntes
 Preview: preview.png
 Image: imagen.jpg
 
 
-En este apunte sencillamente listo los comandos que irán instalando el software de mi elección personal. Luego de instalar [Fedora Workstation con KDE]({filename}/apuntes/fedora-workstation-29-parte-01/fedora-workstation-29-parte-01.md), hacemos una actualización...
+En este apunte sencillamente listo los comandos que irán instalando el software de mi elección personal. Luego de instalar [Fedora Workstation con KDE]({filename}/apuntes/fedora-workstation-29-parte-01/fedora-workstation-29-parte-01.md). Primero hacemos una actualización...
 
     # dnf upgrade
 
@@ -41,7 +41,7 @@ Instale Python...
     # dnf group install --with-optional "Python Classroom"
     # dnf group install --with-optional "Python Science"
 
-Instale utilerías...
+Instale utilerías diversas...
 
     # dnf install system-storage-manager
     # dnf install pwgen
@@ -69,9 +69,12 @@ Instale Inkscape...
 
     # dnf install inkscape
 
-Instale tipografías...
+Instale temas de decoración de ventanas de GTK...
 
     # dnf install clearlooks-phenix-gtk2-theme clearlooks-phenix-gtk3-theme
+
+Instale tipografías...
+
     # dnf install liberation-fonts
     # dnf install bitstream-vera-sans-fonts bitstream-vera-serif-fonts bitstream-vera-sans-mono-fonts
     # dnf install terminus-fonts
@@ -87,7 +90,7 @@ Prepare los repositorios adicionales...
 
 <img class="img-fluid" src="google-chrome.jpg" alt="Google Chrome">
 
-Instale Google Chrome...
+Instale Google Chrome y sus tipografías...
 
     # dnf config-manager --set-enabled google-chrome
     # dnf update
@@ -101,12 +104,12 @@ Configure los repositorios RPM Fusion...
     # dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
       https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
     # dnf update
-      
+
 Para mi equipo, requiero el controlador _anterior_ y binario NVIDIA...
 
     # dnf search nvidia-390
     # dnf install xorg-x11-drv-nvidia-390xx akmod-nvidia-390xx
-    # nano /etc/X11/xorg.conf.d/00-monitor.conf 
+    # nano /etc/X11/xorg.conf.d/00-monitor.conf
     # systemctl reboot
 
 Instale más programas de RPM Fusion...
@@ -123,22 +126,6 @@ Instale más programas de RPM Fusion...
 Para usar contenedores, instale Docker...
 
     # dnf install docker
-    # docker-storage-setup
-    # restorecon -vR /var/lib/docker/
-    # systemctl start docker
-    # systemctl status docker
-    # docker info
-    # systemctl enable docker
-
-Para controlar Docker con mi usuario, cree un grupo para ese fin...
-
-    # grep docker /etc/group
-    # groupadd docker
-    # gpasswd -a guivaloz docker
-    # systemctl restart docker
-
-E instalo Docker Compose...
-
     # dnf install docker-compose
 
 <img class="img-fluid" src="sublime-text.jpg" alt="Sublime Text">
@@ -155,7 +142,7 @@ Instale Libvirtd...
     # dnf group install 'Virtualización' --with-optional
 
 Instale Steam, a partir de RPM Fusion...
-    
+
     # dnf config-manager --set-enabled rpmfusion-nonfree-steam
     # dnf install steam
 
