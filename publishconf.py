@@ -11,6 +11,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # Feed generation
+FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = None
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 AUTHOR_FEED_ATOM = None
@@ -23,8 +24,8 @@ TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
 
 # Feed options
-FEED_MAX_ITEMS = 4
-RSS_FEED_SUMMARY_ONLY = False
+FEED_MAX_ITEMS = 12
+RSS_FEED_SUMMARY_ONLY = True
 
 # Para publicar, los URLs son absolutos
 RELATIVE_URLS = False
@@ -48,18 +49,16 @@ SITEMAP = {
     'priorities': {
         'articles': 1,
         'indexes': 0.5,
-        'pages': 0.5,
+        'pages': 1,
     },
     'changefreqs': {
-        'articles': 'daily',
-        'indexes': 'hourly',
-        'pages': 'daily'
+        'articles': 'weekly',
+        'indexes': 'daily',
+        'pages': 'monthly'
     },
     'exclude': [
-        'archives.html',
-        'tags.html',
-        'categories.html',
-        'author/']
+        'author/',
+    ],
 }
 
 # Para publicar, sí usar dependencias en Internet

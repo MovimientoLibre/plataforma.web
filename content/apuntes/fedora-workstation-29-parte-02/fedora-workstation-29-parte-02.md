@@ -3,7 +3,7 @@ Slug: fedora-workstation-29-parte-02
 Summary: Listo los comandos de instalación del software (preferido por el autor) en Fedora Linux 29 con KDE.
 Tags: fedora, gnu linux
 Date: 2019-01-05 17:40
-Modified: 2019-01-24 10:05
+Modified: 2019-01-29 12:02
 Category: apuntes
 Preview: preview.png
 Image: imagen.jpg
@@ -123,7 +123,7 @@ Instale más programas de RPM Fusion...
     # dnf install moc
     # dnf groupupdate Multimedia
 
-Para usar contenedores, instale Docker...
+Para usar contenedores, instale Docker, después [configure]({filename}/apuntes/fedora-docker-configuracion/fedora-docker-configuracion.md)...
 
     # dnf install docker
     # dnf install docker-compose
