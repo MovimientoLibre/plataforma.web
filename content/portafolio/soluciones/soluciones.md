@@ -68,11 +68,6 @@ Category: portafolio
     </div>
   </div>
 </div>
-<hr>
-
-### Para solicitar más información
-
-Escríbanos a <sistemas@movimientolibre.com>
 
 ### Misión
 
@@ -92,3 +87,7 @@ incrementando la creatividad y usando herramientas modernas.
 * Confianza
 * Sencillez
 * Versatilidad
+
+### Para solicitar más información
+
+Escríbanos a <sistemas@movimientolibre.com>

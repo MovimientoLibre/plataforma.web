@@ -50,12 +50,12 @@
             <h2 class="index-title">{% block content_title %}{% endblock %}</h2>
 {%   endif %}
 {%   for article in articles_page.object_list %}
-            <div class="media mb-4">
+            <div class="media mb-4 index-article">
 {%     if article.preview %}
               <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-3" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Imagen previa"></a>
 {%     endif %}
               <div class="media-body">
-                <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+                <h3 class="index-article-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
 {{ article.summary }}
               </div>
             </div>
