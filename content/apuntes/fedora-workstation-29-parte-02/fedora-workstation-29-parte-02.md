@@ -3,7 +3,7 @@ Slug: fedora-workstation-29-parte-02
 Summary: Listo los comandos de instalación del software (preferido por el autor) en Fedora Linux 29 con KDE.
 Tags: fedora, gnu linux
 Date: 2019-01-05 17:40
-Modified: 2019-01-29 12:02
+Modified: 2019-02-07 22:04
 Category: apuntes
 Preview: preview.png
 Image: imagen.jpg
@@ -119,7 +119,7 @@ Instale más programas de RPM Fusion...
     # dnf install mplayer mencoder
     # dnf install audacity-freeworld
     # dnf install k3b-extras-freeworld
-    # dnf install kdenlive
+    # dnf install kdenlive frei0r-plugins
     # dnf install moc
     # dnf groupupdate Multimedia
 

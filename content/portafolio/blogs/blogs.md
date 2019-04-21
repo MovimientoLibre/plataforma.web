@@ -1,12 +1,12 @@
 Title: Blogs
 Slug: blogs
 Summary: Sitios web de amigos que recomiendo.
-Date: 2017-12-27 22:22
-Modified: 2017-12-27 22:22
+Date: 2019-04-18 14:50
+Modified: 2019-04-18 14:50
 Category: portafolio
 
 
-Ya sea por amistad, afinidad tecnológica o mero interés, recomiendo que visiten y sigan estos _blogs_ en español. Están por orden alfabético:
+Recomiendo que lean los _blogs_ de los amigos del GULAG:
 
 * [De todo un poco](http://guabyboy.blogspot.mx/) es el blog de _guabyboy_ donde escribe experiencias sobre Guadalinex y OpenSUSE.
 * [Enekosarasola](http://enekosarasola.ikasle.aeg.es) comparte sus descubrimientos del Software Libre.

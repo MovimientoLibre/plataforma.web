@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {% block meta_tags %}{% endblock %}
@@ -19,32 +19,32 @@
 {% if USE_REMOTE_SERVICES %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
 {%   include 'google-analytics.html' %}
 {% else %}
     <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/font-awesome/css/font-awesome.min.css" type="text/css">
 {% endif %}
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/screen.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/movimiento-libre.css">
+</head>
+<body>
 {% include 'navigation.html' %}
     <div class="container">
 {% include 'header-welcome.html' %}
-      <div class="row">
-        <div class="col-sm-8">
+        <div class="row">
+            <div class="col-sm-8">
 {% block content %}{% endblock %}
-        </div>
-        <div class="col-sm-4">
-          <aside>
+            </div>
+            <div class="col-sm-4">
+                <aside>
 {% include 'aside-about.html' %}
 {% include 'aside-tags.html' %}
 {% if USE_REMOTE_SERVICES %}
 {%   include 'aside-search.html' %}
 {% endif %}
-          </aside>
+                </aside>
+            </div>
         </div>
-      </div>
     </div>
 {% include 'footer.html' %}
 {% if USE_REMOTE_SERVICES %}
@@ -56,6 +56,6 @@
     <script src="{{ SITEURL }}/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 {% endif %}
     <script src="{{ SITEURL }}/theme/js/movimiento-libre.js"></script>
-  </body>
+</body>
 </html>
 
