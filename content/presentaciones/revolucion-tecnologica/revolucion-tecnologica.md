@@ -3,9 +3,10 @@ Slug: revolucion-tecnologica
 Summary: En esta ponencia explico los avances tecnológicos más trascendentes de la humanidad y enumero los grandes retos que tenemos que resolver con tecnología, ciencia e ingeniería.
 Tags: conferencias, educación
 Date: 2019-04-01 18:52
-Modified: 2019-04-01 18:52
+Modified: 2019-04-23 14:48
 Category: presentaciones
 Preview: preview.jpg
+Image: image.jpg
 
 
 <div class="row" style="margin: 2em 0;">
