@@ -9,16 +9,16 @@
     <meta name="author" content="{{ AUTHOR }}">
     <meta itemprop="name" content="{{ SITENAME }}">
     <meta itemprop="description" content="{{ SITEDESCRIPTION }}">
-    <meta itemprop="image" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta itemprop="image" content="/{{ SITELOGO }}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{ SITETWITTER }}">
     <meta name="twitter:title" content="{{ SITENAME }}">
     <meta name="twitter:description" content="{{ SITEDESCRIPTION }}">
-    <meta name="twitter:image:src" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta name="twitter:image:src" content="/{{ SITELOGO }}">
     <meta property="og:title" content="{{ SITENAME }}">
     <meta property="og:type" content="summary">
-    <meta property="og:url" content="{{ SITEURL }}/{{ output_file }}">
-    <meta property="og:image" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta property="og:url" content="/{{ output_file }}">
+    <meta property="og:image" content="/{{ SITELOGO }}">
     <meta property="og:description" content="{{ SITEDESCRIPTION }}">
     <meta property="og:site_name" content="{{ SITENAME }}">
 {% else %}
@@ -27,16 +27,16 @@
     <meta name="author" content="{{ AUTHOR }}">
     <meta itemprop="name" content="Índice - {{ SITENAME }}">
     <meta itemprop="description" content="Índice de publicaciones.">
-    <meta itemprop="image" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta itemprop="image" content="/{{ SITELOGO }}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{ SITETWITTER }}">
     <meta name="twitter:title" content="Índice - {{ SITENAME }}">
     <meta name="twitter:description" content="Índice de publicaciones.">
-    <meta name="twitter:image:src" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta name="twitter:image:src" content="/{{ SITELOGO }}">
     <meta property="og:title" content="Índice - {{ SITENAME }}">
     <meta property="og:type" content="summary">
-    <meta property="og:url" content="{{ SITEURL }}/{{ output_file }}">
-    <meta property="og:image" content="{{ SITEURL }}/{{ SITELOGO }}">
+    <meta property="og:url" content="/{{ output_file }}">
+    <meta property="og:image" content="/{{ SITELOGO }}">
     <meta property="og:description" content="Índice de publicaciones.">
     <meta property="og:site_name" content="{{ SITENAME }}">
 {% endif %}
@@ -52,10 +52,10 @@
 {%   for article in articles_page.object_list %}
                         <div class="media mb-4 index-article">
 {%     if article.preview %}
-                            <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-3" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Imagen previa"></a>
+                            <a href="/{{ article.url }}"><img class="mr-3" src="/{{ article.url }}{{ article.preview }}" alt="Imagen previa"></a>
 {%     endif %}
                             <div class="media-body">
-                                <h3 class="index-article-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+                                <h3 class="index-article-title"><a href="/{{ article.url }}">{{ article.title }}</a></h3>
 {{ article.summary }}
                             </div>
                         </div>
@@ -67,12 +67,12 @@
 {%     if articles_page.has_previous() %}
                             <li class="page-item">
 {%       if articles_page.previous_page_number() == 1 %}
-                                <a class="page-link" aria-label="Previous" href="{{ SITEURL }}/{{ page_name }}.html">
+                                <a class="page-link" aria-label="Previous" href="/{{ page_name }}.html">
                                     <span aria-hidden="true">&laquo;</span>
                                     <span class="sr-only">Anterior</span>
                                 </a>
 {%       else %}
-                                <a class="page-link movimientolibre-page-link" aria-label="Previous" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
+                                <a class="page-link movimientolibre-page-link" aria-label="Previous" href="/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
                                     &#60;&#60;
                                 </a>
 {%       endif %}
@@ -81,13 +81,13 @@
 {%     for page_number in range(1, 1 + articles_paginator.num_pages) %}
 {%       if (page_number - articles_page.number < 3) and (page_number - articles_page.number > -3) %}
                             <li class="page-item">
-                                <a class="page-link movimientolibre-page-link" href="{{ SITEURL }}/{{ page_name }}{{ page_number if page_number > 1 else '' }}.html">{{ page_number }}</a>
+                                <a class="page-link movimientolibre-page-link" href="/{{ page_name }}{{ page_number if page_number > 1 else '' }}.html">{{ page_number }}</a>
                             </li>
 {%       endif %}
 {%     endfor %}
 {%     if articles_page.has_next() %}
                             <li class="page-item">
-                                <a class="page-link movimientolibre-page-link" aria-label="Next" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">
+                                <a class="page-link movimientolibre-page-link" aria-label="Next" href="/{{ page_name }}{{ articles_page.next_page_number() }}.html">
                                     <span aria-hidden="true">&raquo;</span>
                                     <span class="sr-only">Siguiente</span>
                                 </a>
