@@ -54,7 +54,7 @@ SITEMAP = {
     'changefreqs': {
         'articles': 'weekly',
         'indexes': 'daily',
-        'pages': 'monthly'
+        'pages': 'monthly',
     },
     'exclude': [
         'author/',

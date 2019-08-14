@@ -23,13 +23,14 @@ PAGE_PATHS = ['licencias', 'portafolio']
 
 # Directorios y archivos que son fijos
 # Agregue también los directorios que tienen archivos para artículos y páginas
-STATIC_PATHS = ['CNAME', 'favicon.ico', 'LICENSE', 'README.md', 'robots.txt',
-                'apuntes', 'articulos', 'presentaciones', 'portafolio']
+STATIC_PATHS = ['CNAME', 'favicon.ico', 'LICENSE', 'README.md', 'robots.txt', 'apuntes', 'articulos', 'presentaciones', 'portafolio']
 
 # Encabezados para las categorías
-CATEGORIES_TITLES = {'apuntes': 'Apuntes',
-                     'articulos': 'Artículos',
-                     'presentaciones': 'Presentaciones'}
+CATEGORIES_TITLES = {
+    'apuntes': 'Apuntes',
+    'articulos': 'Artículos',
+    'presentaciones': 'Presentaciones',
+    }
 
 # Usar el nombre del directorio como la categoría
 USE_FOLDER_AS_CATEGORY = False
