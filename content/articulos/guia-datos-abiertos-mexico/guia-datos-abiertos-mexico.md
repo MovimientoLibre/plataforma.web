@@ -1,7 +1,7 @@
 Title: Guía de los Datos Abiertos para México (respaldo)
 Slug: guia-datos-abiertos-mexico
 Author: Estrategia Digital Nacional México
-Summary: Como fruto del trabajo sobre Gobierno Abierto, el equipo de la Estrategia Digital Nacional redactó la Guía de los Datos Abiertos para México que en el presente se encuentra fuera de línea. A partir de su repositorio en GitHub he copiado su contenido pues considero que es un valioso material de consulta y no debe ser eliminado.
+Summary: Como fruto del trabajo sobre Gobierno Abierto el equipo de la Estrategia Digital Nacional redactó la Guía de los Datos Abiertos para México que en el presente se encuentra fuera de línea. A partir de su repositorio en GitHub he copiado su contenido pues considero que es un valioso material de consulta y no debe ser eliminada.
 Tags: política
 Date: 2019-08-30 22:20
 Modified: 2019-08-30 22:20
