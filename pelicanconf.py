@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 # Sitio web
-SITEURL = 'https://www.movimientolibre.com'
+SITEURL = 'https://movimientolibre.com'
 SITENAME = 'Movimiento Libre'
 SITELOGO = 'theme/images/movimientolibre.png'
 SITEDESCRIPTION = 'Plataforma de divulgación de conocimiento libre por Ing. Guillermo Valdés Lozano (guivaloz)'

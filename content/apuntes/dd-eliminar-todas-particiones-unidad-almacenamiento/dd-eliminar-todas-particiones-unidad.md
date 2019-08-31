@@ -3,7 +3,7 @@ Slug: dd-eliminar-todas-particiones-unidad-almacenamiento
 Summary: Cómo usar el comando dd para eliminar todas las particiones de un disco duro, memoria externa o cualquier otro dispositivo de almacenamiento.
 Tags: gnu linux
 Date: 2018-09-26 17:45
-Modified: 2018-09-26 17:45
+Modified: 2019-08-25 16:22
 Category: apuntes
 Preview: preview.png
 
@@ -30,4 +30,4 @@ Para eliminar todas las particiones, ejecute el comando `dd` cambiando `/dev/sdX
 
 Verifique que se hayan eliminado las particiones...
 
-    # fdisk -l /dev/sdc
+    # fdisk -l /dev/sdX
