@@ -2,14 +2,11 @@ Title: Contacto
 Slug: contacto
 Summary: Datos de contacto del responsable de este sitio web.
 Date: 2019-04-18 14:48
-Modified: 2019-04-18 14:48
+Modified: 2020-01-12 20:09
 Category: portafolio
 
 
-El presente sitio es elaborado por *Ing. Guillermo Valdés Lozano*.
-Quien trabaja en el desarrollo de sistemas con Software Libre y recursos de la _Nube_.
-También hace el esfuerzo de difundir el uso del [Software Libre](http://es.wikipedia.org/wiki/Software_libre).
-Queda a su servicio para asesorías, pláticas o conferencias sobre el tema.
+El *Ing. Guillermo Valdés Lozano* trabaja en el desarrollo de sistemas con [Software Libre](http://es.wikipedia.org/wiki/Software_libre) y es promotor y divulgador del uso de los mismos.
 
 ### Certificaciones
 

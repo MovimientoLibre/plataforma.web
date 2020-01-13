@@ -29,8 +29,8 @@ RSS_FEED_SUMMARY_ONLY = True
 
 # Para publicar, los URLs son absolutos
 RELATIVE_URLS = False
-LOAD_CONTENT_CACHE = False
-DELETE_OUTPUT_DIRECTORY = False
+LOAD_CONTENT_CACHE = True
+DELETE_OUTPUT_DIRECTORY = True
 
 # Paginacion
 DEFAULT_PAGINATION = True
@@ -57,6 +57,9 @@ SITEMAP = {
         'pages': 'monthly',
     },
     'exclude': [
+        'archives.html',
+        'tags.html',
+        'categories.html',
         'author/',
     ],
 }
