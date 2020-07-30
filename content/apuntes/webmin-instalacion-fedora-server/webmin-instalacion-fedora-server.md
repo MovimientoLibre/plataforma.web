@@ -10,7 +10,7 @@ Preview: webmin.png
 
 Para este apunte se utilizó [Fedora Server](https://getfedora.org/es/server/) versión 32.
 
-## Instalar
+## Instalar Webmin
 
 Crear un archivo para configurar el repositorio
 
@@ -36,7 +36,9 @@ Al terminar da este mensaje
     You can now login to https://SERVIDOR:10000/
     as root with your root password.
 
-Sigue configurar el muro de fuego para que se abra el puerto 10000.
+## Configurar el muro de fuego
+
+Sigue configurar el _firewall_ para que se abra el puerto 10000.
 
 Por defecto la zona activa se llama FedoraServer
 
@@ -92,9 +94,9 @@ No he encontrado una orden para recargar la configuración, así que reinicio el
 
     $ sudo systemctl reboot
 
-Ingresar con el navegador de internet a...
+De nueva cuenta, ingresar con el navegador de internet a...
 
-    https://flegetonte.divinacomedia.lan:10000/
+    https://SERVIDOR:10000/
 
 Pruebe su usuario y contraseña.
 
