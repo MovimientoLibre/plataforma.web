@@ -123,8 +123,8 @@ Cree un archivo para un comunicado...
 
 Por ejemplo, inicie con los [metadados](https://docs.getpelican.com/en/stable/content.html#file-metadata) y el contenido en **markdown**...
 
-    Title: Hola Mundo
-    Slug: hola-mundo
+    Title: Primer Comunicado
+    Slug: primer-comunicado
     Category: Comunicados
     Date: 2020-03-21 18:32
     Tags: Demostraciones, Desarrollo, Python
