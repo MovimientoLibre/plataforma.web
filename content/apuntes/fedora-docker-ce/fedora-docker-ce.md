@@ -1,7 +1,7 @@
 Title: Instalación de Docker CE en Fedora
 Slug: fedora-docker-ce
 Summary: Docker Community Edition es la que tiene soporte libre por la comunidad y que nos brinda una versión más reciente que la de los repositorios de Fedora.
-Tags: fedora, docker
+Tags: fedora, contenedores
 Date: 2019-02-22 11:45
 Modified: 2019-02-22 11:45
 Category: apuntes

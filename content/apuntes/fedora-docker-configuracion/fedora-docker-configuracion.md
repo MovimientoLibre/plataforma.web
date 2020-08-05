@@ -1,7 +1,7 @@
 Title: Configuración de Docker en Fedora
 Slug: fedora-docker-configuracion
 Summary: Listo los comandos para configurar Docker en Fedora con su partición dedicada y control por el usuario.
-Tags: fedora, docker
+Tags: fedora, contenedores
 Date: 2019-01-24 10:10
 Modified: 2019-01-24 10:30
 Category: apuntes

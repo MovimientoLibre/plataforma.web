@@ -1,10 +1,10 @@
 Title: Pelican: Constructor de sitios web
 Slug: pelican-constructor-sitios-web
 Summary: Pelican es un constructor de sitios web estáticos programado en Python que no necesita de una base de datos.
-Tags: pelican, python
+Tags: python
 Date: 2020-03-30 16:08
 Modified: 2020-03-30 16:08
-Category: Apuntes
+Category: apuntes
 Preview: python.png
 
 

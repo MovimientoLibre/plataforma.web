@@ -20,13 +20,13 @@ ARTICLE_PATHS = [
     'apuntes',
     'articulos',
     'presentaciones',
-    ]
+]
 
 # Directorios que tienen páginas fijas, no artículos
 PAGE_PATHS = [
     'licencias',
     'portafolio',
-    ]
+]
 
 # Directorios y archivos que son fijos
 # Agregue también los directorios que tienen archivos para artículos y páginas
@@ -40,14 +40,14 @@ STATIC_PATHS = [
     'articulos',
     'presentaciones',
     'portafolio',
-    ]
+]
 
 # Encabezados para las categorías
 CATEGORIES_TITLES = {
     'apuntes': 'Apuntes',
     'articulos': 'Artículos',
     'presentaciones': 'Presentaciones',
-    }
+}
 
 # Usar el nombre del directorio como la categoría
 USE_FOLDER_AS_CATEGORY = False
@@ -72,9 +72,6 @@ RELATIVE_URLS = True
 
 # Para desarrollo, se desactiva la paginacion
 DEFAULT_PAGINATION = False
-#DEFAULT_PAGINATION = True
-#DEFAULT_PAGINATION = 8
-#DEFAULT_ORPHANS = 2
 
 # Para desarrollo, no hay cargas desde Internet
 USE_REMOTE_SERVICES = False
