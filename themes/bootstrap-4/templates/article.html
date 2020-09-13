@@ -60,7 +60,8 @@
                         }
                     </script>
                     <h2 class="article-post-title">{{ article.title }}</h2>
-                    <p class="article-post-meta">{{ article.summary }}<br>{{ article.date|strftime('%d %B %Y') }}</p>
+{{ article.summary }}
+                    <p class="article-post-meta">{{ article.date|strftime('%d %B %Y') }}</p>
 {{ article.content }}
                 </article>
 {% endblock %}

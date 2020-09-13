@@ -3,7 +3,7 @@ Slug: podman-02-tinyfilemanager-php
 Summary: Ahora probaremos crear un contenedor con el servidor web Apache y con PHP para ejecutar el explorador de archivos Tiny File Manager.
 Tags: contenedores
 Date: 2020-08-09 20:58
-Modified: 2020-08-09 20:58
+Modified: 2020-09-13 11:30
 Category: apuntes
 Preview: podman.png
 
@@ -103,7 +103,8 @@ Parar con
 
     $ podman container stop tinyfilemanager
 
-## Navegue por la serie de ejercicios de Podman
+## Navegue por la serie de apuntes de Podman
 
 1. [Contenedor con documentación de Python](../podman-01-documentacion-python/)
 2. Contenedor con explorador de archivos web en PHP
+3. [Pod con MySQL y PhpMyAdmin](../podman-03-pods-mysql-phpmyadmin/)

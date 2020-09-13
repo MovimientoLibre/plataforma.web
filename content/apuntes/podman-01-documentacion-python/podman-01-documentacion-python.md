@@ -3,10 +3,12 @@ Slug: podman-01-documentacion-python
 Summary: Primer ejercicio para probar Podman donde se crea un contenedor, se copia y desempaca la documentación de Python y se levanta un servidor web para consultarla.
 Tags: contenedores
 Date: 2020-08-04 22:00
-Modified: 2020-08-09 21:00
+Modified: 2020-09-13 11:30
 Category: apuntes
 Preview: podman.png
 
+
+Bienvenido a la serie de apuntes sobre [Podman](https://podman.io/) que espero sea de ayuda para aprender y utilizar el uso de contenedores impulsado por [RedHat](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/building_running_and_managing_containers/index).
 
 Crear un directorio para este ejercicio
 
@@ -62,7 +64,8 @@ Terminar la ejecución del contenedor con...
 
     $ podman stop python_docs_web
 
-## Navegue por la serie de ejercicios de Podman
+## Navegue por la serie de apuntes de Podman
 
 1. Contenedor con documentación de Python
 2. [Contenedor con explorador de archivos web en PHP](../podman-02-tinyfilemanager-php/)
+3. [Pod con MySQL y PhpMyAdmin](../podman-03-pods-mysql-phpmyadmin/)

@@ -6,15 +6,18 @@ Modified: 2020-01-12 20:09
 Category: portafolio
 
 
-El *Ing. Guillermo Valdés Lozano* trabaja en el desarrollo de sistemas con [Software Libre](http://es.wikipedia.org/wiki/Software_libre) y es promotor y divulgador del uso de los mismos.
+![guivaloz](guivaloz.jpg)
 
-### Certificaciones
+El *Ing. Guillermo Valdés Lozano* es _informático_ que usa, promueve y divulga [Software Libre](http://es.wikipedia.org/wiki/Software_libre).
 
-* **Google Cloud:** [Google Cloud Platform Fundamentals: Core Infrastructure](https://www.coursera.org/account/accomplishments/verify/75LY3F5LM57E).
-* **Google Cloud:** [Getting Started With Application Development](https://www.coursera.org/account/accomplishments/verify/T24NTA2ZYV5H).
-* **Universidad Nacional Autónoma de México:** [Introducción a Data Science: Programación Estadística con R](https://www.coursera.org/account/accomplishments/verify/ZLGM6MAWULPL).
+## Certificaciones
 
-### Medios de contacto
+- **Google Cloud:** [Google Cloud Platform Fundamentals: Core Infrastructure](https://www.coursera.org/account/accomplishments/verify/75LY3F5LM57E).
+- **Google Cloud:** [Getting Started With Application Development](https://www.coursera.org/account/accomplishments/verify/T24NTA2ZYV5H).
+- **Universidad Nacional Autónoma de México:** [Introducción a Data Science: Programación Estadística con R](https://www.coursera.org/account/accomplishments/verify/ZLGM6MAWULPL).
 
-* Correo electrónico en <guivaloz@movimientolibre.com>.
-* Twitter <https://twitter.com/guivaloz>
+## Redes sociales
+
+1. [Twitter @guivaloz](https://twitter.com/guivaloz)
+2. [LinkedIn @guivaloz](https://www.linkedin.com/in/guivaloz/)
+3. [Facebook movimientolibrepuntocom](https://www.facebook.com/movimientolibrepuntocom)
