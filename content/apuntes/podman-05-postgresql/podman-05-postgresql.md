@@ -24,4 +24,4 @@ PgAdmin necesita que se declaren por lo menos estas dos variables
 
 O mejor
 
-    $ docker run --rm --name mi_bitacora_bd -p 8085:80 -e 'PGADMIN_DEFAULT_EMAIL=guivaloz@gmail.com' -e 'PGADMIN_DEFAULT_PASSWORD=cetujavu' -d dpage/pgadmin4
+    $ podman run --rm --name mi_bitacora_pgadmin4 -p 8085:80 -e 'PGADMIN_DEFAULT_EMAIL=guivaloz@gmail.com' -e 'PGADMIN_DEFAULT_PASSWORD=pa55w0rD' -d dpage/pgadmin4

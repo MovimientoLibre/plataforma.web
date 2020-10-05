@@ -51,7 +51,7 @@ Con este contenido
     # Ir al directorio raiz del servidor web
     WORKDIR /var/www/html
 
-    # Copiar index.php y cambir su usuario a www-data
+    # Copiar index.php y cambiar su dueño a www-data
     COPY index.php .
     RUN chown www-data index.php
 

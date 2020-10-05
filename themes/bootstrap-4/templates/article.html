@@ -17,7 +17,7 @@
 {% endif %}
     <meta property="og:title" content="{{ article.title }}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="/{{ article.url }}">
+    <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}">
 {% if article.image %}
     <meta property="og:image" content="{{ SITEURL }}/{{ article.url }}{{ article.image }}">
 {% elif article.preview %}
