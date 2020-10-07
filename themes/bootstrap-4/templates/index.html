@@ -34,6 +34,15 @@
     <meta property="og:description" content="Índice de publicaciones.">
     <meta property="og:site_name" content="{{ SITENAME }}">
 {% endif %}
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "{{ SITEURL }}",
+        "name": "{{ SITENAME }}",
+        "description": "{{ SITEDESCRIPTION }}"
+    }
+    </script>
 {% endblock %}
 
 {% block content %}

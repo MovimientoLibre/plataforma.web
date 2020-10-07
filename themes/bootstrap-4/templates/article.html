@@ -6,14 +6,14 @@
     <meta name="description" content="{{ article.summary|striptags }}">
     <meta name="keywords" content="{{ [article.tags|join(', '), article.category]|join(', ') }}">
     <meta name="author" content="{{ article.author.name }}">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{ SITETWITTER }}">
     <meta name="twitter:title" content="{{ article.title }}">
     <meta name="twitter:description" content="{{ article.summary|striptags }}">
 {% if article.image %}
-    <meta name="twitter:image:src" content="{{ SITEURL }}/{{ article.url }}{{ article.image }}">
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ article.url }}{{ article.image }}">
 {% elif article.preview %}
-    <meta name="twitter:image:src" content="{{ SITEURL }}/{{ article.url }}{{ article.preview }}">
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ article.url }}{{ article.preview }}">
 {% endif %}
     <meta property="og:title" content="{{ article.title }}">
     <meta property="og:type" content="article">
@@ -34,29 +34,29 @@
                             "@context": "http://schema.org",
                             "@type": "Article",
                             "publisher": {
-                            "@type": "Organization",
-                            "name": "{{ SITENAME }}",
-                            "logo": {
-                                "@type": "ImageObject",
-                                "url": "{{ SITEURL }}/{{ SITELOGO }}"
+                                "@type": "Organization",
+                                "name": "{{ SITENAME }}",
+                                "logo": {
+                                    "@type": "ImageObject",
+                                    "url": "{{ SITEURL }}/{{ SITELOGO }}"
+                                },
+                                "url": "{{ SITEURL }}"
                             },
-                            "url": "{{ SITEURL }}"
-                        },
-                        "author": "{{ article.author }}",
-                        "name": "{{ article.title }}",
-                        "headline": "{{ article.title }}",
-                        "description": "{{ article.summary|striptags }}",
-                        "dateCreated": "{{ article.date }}",
-                        "datePublished": "{{ article.date }}",
-                        "dateModified": "{{ article.modified }}",
-                        {% if article.image %}
-                        "image": "{{ SITEURL }}/{{ article.category }}/{{ article.slug }}/{{ article.image }}",
-                        {% elif article.preview %}
-                        "image": "{{ SITEURL }}/{{ article.category }}/{{ article.slug }}/{{ article.preview }}",
-                        {% else %}
-                        "image": "{{ SITEURL }}/{{ SITELOGO }}",
-                        {% endif %}
-                        "url": "{{ SITEURL }}/{{ article.url }}"
+                            "author": "{{ article.author }}",
+                            "name": "{{ article.title }}",
+                            "headline": "{{ article.title }}",
+                            "description": "{{ article.summary|striptags }}",
+                            "dateCreated": "{{ article.date }}",
+                            "datePublished": "{{ article.date }}",
+                            "dateModified": "{{ article.modified }}",
+                            {% if article.image %}
+                            "image": "{{ SITEURL }}/{{ article.category }}/{{ article.slug }}/{{ article.image }}",
+                            {% elif article.preview %}
+                            "image": "{{ SITEURL }}/{{ article.category }}/{{ article.slug }}/{{ article.preview }}",
+                            {% else %}
+                            "image": "{{ SITEURL }}/{{ SITELOGO }}",
+                            {% endif %}
+                            "url": "{{ SITEURL }}/{{ article.url }}"
                         }
                     </script>
                     <h2 class="article-post-title">{{ article.title }}</h2>
