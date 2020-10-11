@@ -12,7 +12,7 @@ from pelicanconf import *
 
 # Feed generation
 FEED_DOMAIN = SITEURL
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None

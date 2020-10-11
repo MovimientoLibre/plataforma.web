@@ -2,8 +2,8 @@ Title: Podman básico: Contenedor con documentación de Python
 Slug: podman-01-documentacion-python
 Summary: Primer ejercicio para probar Podman donde se crea un contenedor, se copia y desempaca la documentación de Python y se levanta un servidor web para consultarla.
 Tags: contenedores
-Date: 2020-10-09 12:27
-Modified: 2020-10-09 12:27
+Date: 2020-10-09 12:27:00
+Modified: 2020-10-09 12:27:00
 Category: apuntes
 Preview: podman.png
 
