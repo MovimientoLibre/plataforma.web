@@ -1,3 +1,6 @@
 .directory
-__pycache__
+.bashrc
 *.pyc
+__pycache__/
+output/
+venv/

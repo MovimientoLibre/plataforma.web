@@ -3,7 +3,7 @@ Slug: fedora-workstation-33
 Summary: Comandos de instalación del software (preferido por el autor) en Fedora Workstation 33 con KDE.
 Tags: fedora, gnu linux
 Date: 2020-10-21 05:20
-Modified: 2020-10-21 05:20
+Modified: 2020-10-28 18:46
 Category: apuntes
 Preview: preview.png
 Image: fedora-33-kde.jpg
@@ -11,7 +11,7 @@ Image: fedora-33-kde.jpg
 
 <img class="img-fluid" src="fedora-33-kde.jpg" alt="Fedora 33 KDE Plasma">
 
-Al momento de escribir este apunte aun no ha sido liberado [Fedora](https://getfedora.org/) 33; pero como mi paciencia se acaba, he decidido probar la [versión Beta](https://fedoramagazine.org/announcing-the-release-of-fedora-33-beta/) del mismo.
+**ACTUALIZADO:** Ya está disponible [Fedora](https://getfedora.org/) en su versión 33; que entre sus novedades usa [BTRFS](https://es.wikipedia.org/wiki/Btrfs) por defecto como sistema de archivos.
 
 Hago pública una afición: cada vez que Fedora libera una nueva versión, hago una instalación nueva desde _formatear_ hasta restaurar (y revisar) mi _home_. Es mi gusto muy personal. Si dan un vistazo a este _blog_ verán que hay apuntes con los pasos de las versiones anteriores; al compararlos podremos observar ligeras diferencias.
 
@@ -95,12 +95,7 @@ E instalar con...
     $ sudo dnf check-update
     $ sudo dnf install code
 
-Noto que me hace falta GIT y herramientas de Python...
-
-    $ sudo dnf install git
-    $ sudo dnf install pipenv
-
-En este momento, no he instalado el grupo "Python Classroom" porque me baja la versión de GCC; esperaré a que lo resuelvan en el futuro cercano...
+**ACTUALIZADO:** Para desarrollar software con Python installo **Python Classroom** para tener varias versiones y herramientas adicionales...
 
     $ sudo dnf groupinstall "Python Classroom"
 
