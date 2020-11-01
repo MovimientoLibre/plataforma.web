@@ -3,7 +3,7 @@ Slug: fedora-workstation-33
 Summary: Comandos de instalación del software (preferido por el autor) en Fedora Workstation 33 con KDE.
 Tags: fedora, gnu linux
 Date: 2020-10-21 05:20
-Modified: 2020-10-28 18:46
+Modified: 2020-11-01 16:20
 Category: apuntes
 Preview: preview.png
 Image: fedora-33-kde.jpg
@@ -39,8 +39,8 @@ Y otras cercanas a KDE...
 
 De parte de las herramientas para gráficas instalamos [GIMP](https://www.gimp.org/) e [Inkscape](https://inkscape.org/)...
 
-    $ dnf install gimp
-    $ dnf install inkscape
+    $ sudo dnf install gimp
+    $ sudo dnf install inkscape
 
 Si tiene colección de libros electrónicos use [Calibre](https://calibre-ebook.com/)...
 
@@ -60,7 +60,6 @@ Fedora dejó atrás a Docker e impulsa los contenedores con [Podman](https://pod
 
 Hay que instalar repositorios extras...
 
-    $ dnf install fedora-workstation-repositories
     $ sudo dnf install fedora-workstation-repositories
     $ sudo dnf update
     $ sudo dnf repolist --all
