@@ -10,6 +10,10 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+# Para producción
+SITEURL = 'https://movimientolibre.com'
+RELATIVE_URLS = False
+
 # Feed generation
 FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -24,26 +28,18 @@ TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
 
 # Feed options
-FEED_MAX_ITEMS = 12
+FEED_MAX_ITEMS = 24
 RSS_FEED_SUMMARY_ONLY = True
-
-# Para publicar, los URLs son absolutos
-RELATIVE_URLS = False
-LOAD_CONTENT_CACHE = True
-DELETE_OUTPUT_DIRECTORY = True
 
 # Paginacion
 DEFAULT_PAGINATION = True
 DEFAULT_PAGINATION = 8
 DEFAULT_ORPHANS = 2
 
-# Path to the folder containing the plugins
-PLUGIN_PATHS = ['plugins']
+# Plugins
+PLUGINS = ['articles_lists_json', 'pelican_javascript', 'sitemap']
 
-# The plugins you want to be enabled
-PLUGINS = ['sitemap']
-
-# Configuration for the "sitemap" plugin
+# Plugin sitemap
 SITEMAP = {
     'format': 'xml',
     'priorities': {

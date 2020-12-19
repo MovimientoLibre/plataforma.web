@@ -3,7 +3,7 @@ Slug: pelican-constructor-sitios-web
 Summary: Pelican es un constructor de sitios web estáticos programado en Python que no necesita de una base de datos.
 Tags: python
 Date: 2020-03-30 16:08
-Modified: 2020-03-30 16:08
+Modified: 2020-12-12 14:48
 Category: apuntes
 Preview: python.png
 
@@ -41,40 +41,34 @@ El gestor de paquetes [Python Package Index](https://pypi.org/) alias _pip_...
 
     $ which pip
 
-Y una herramienta para crear entornos virtuales de Python, como **virtualenv**...
-
-    $ which virtualenv
+Y una herramienta para crear entornos virtuales de Python, como **venv** o **virtualenv**...
 
 ### Pasos para su instalación
 
-Primero primero hay que crear un entorno virtual con Python 3 y con nombre Pelican...
+Puede crear los entornos virtuales en cualquier lugar de sus dispositivos de almacenamiento. Por ejemplo, pada disponer de esta herramienta en su escritorio...
 
-    $ cd ~
-    $ mkdir VirtualEnv
-    $ cd VirtualEnv
-    $ virtualenv -p python3 Pelican
-
-Cámbiese a ese directorio...
-
+    $ cd ~/Escritorio
+    $ mkdir Pelican
     $ cd Pelican
+    $ python -m venv venv
 
-Active el entorno virtual...
+Active el entorno virtual
 
-    $ . bin/activate
+    $ . venv/bin/activate
 
 E instale los paquetes Pelican y Markdown...
 
-    (Pelican) $ pip install pelican markdown
+    (venv) $ pip install pelican markdown
 
-Revise que dentro del entorno virtual se hayan instalado los paquetes y sus dependencias...
+Revise los paquetes instalados con...
 
-    (Pelican) $ pip list
+    (venv) $ pip list
 
 ### Crear un sitio web rápidamente con el asistente
 
 El asistente nos pregunta las variables necesarias para crear un sitio web, ejecute con...
 
-    (Pelican) $ pelican-quickstart
+    (venv) $ pelican-quickstart
 
 Por ejemplo, vamos a crear un sitio web llamado _Demostracion_...
 
@@ -96,8 +90,8 @@ Por ejemplo, vamos a crear un sitio web llamado _Demostracion_...
 
 Al terminar nos crea un directorio `Demostracion`. Veamos lo que el asistente creó...
 
-    (Pelican) $ cd Demostracion
-    (Pelican) $ ls
+    (venv) $ cd Demostracion
+    (venv) $ ls
 
 Pelican necesita de estos directorios y archivos:
 
@@ -115,11 +109,11 @@ Cuando en el asistente se contesta con Sí en generar **tasks.py/Makefile** tamb
 
 Cámbiese al directorio `contents`...
 
-    (Pelican) $ cd contents
+    (venv) $ cd contents
 
 Cree un archivo para un comunicado...
 
-    (Pelican) $ nano -w primer-comunicado.md
+    (venv) $ nano -w primer-comunicado.md
 
 Por ejemplo, inicie con los [metadados](https://docs.getpelican.com/en/stable/content.html#file-metadata) y el contenido en **markdown**...
 
@@ -133,15 +127,15 @@ Por ejemplo, inicie con los [metadados](https://docs.getpelican.com/en/stable/co
 
 Regrese al directorio `Demostracion`...
 
-    (Pelican) $ cd ..
+    (venv) $ cd ..
 
 Construya el sitio...
 
-    (Pelican) $ make html
+    (venv) $ make html
 
 Arranque el servidor web, por defecto usará el puerto 8000...
 
-    (Pelican) $ make serve
+    (venv) $ make serve
 
 Revise en su navegador el sitio web `Demostracion`...
 
@@ -151,13 +145,13 @@ Mate el servidor presionando `CTRL-C`.
 
 Ahora, pruebe el comando para construir el sitio web cada vez que haya cambios y levantar el servicio web al mismo tiempo...
 
-    (Pelican) $ make devserver
+    (venv) $ make devserver
 
 Deje la terminal en el fondo y siga agregando o modificando. En su navegador de internet presione `F5` para refrescar. Mate presionando `CTRL-C`.
 
 Para generar el sitio web para subir a internet, leyendo las variables de `publishconf.py`, debe ejecutar...
 
-    (Pelican) $ make publish
+    (venv) $ make publish
 
 Copie el contenido de `output` a su servidor web o a su proveedor en la nube.
 
@@ -211,7 +205,7 @@ Aprenda [Jinja2](https://palletsprojects.com/p/jinja/) para dominar la creación
 
 Si ya terminó, puede simplemente cerrar la terminal o pedir su desactivación...
 
-    (Pelican) $ deactivate
+    (venv) $ deactivate
 
 ### Aprenda más en
 

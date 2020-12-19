@@ -2,8 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+# Para desarrollo
+SITEURL = 'http://localhost:8000'
+RELATIVE_URLS = False
+
 # Sitio web
-SITEURL = 'https://movimientolibre.com'
 SITENAME = 'Movimiento Libre'
 SITELOGO = 'theme/images/movimientolibre.png'
 SITEDESCRIPTION = 'Plataforma de divulgación de conocimiento libre por Ing. Guillermo Valdés Lozano (guivaloz)'
@@ -60,15 +63,22 @@ ARTICLE_SAVE_AS = '{category}/{slug}/index.html'
 PAGE_URL = '{category}/{slug}/'
 PAGE_SAVE_AS = '{category}/{slug}/index.html'
 
+# Plugins
+PLUGIN_PATHS = ['plugins']
+PLUGINS = ['articles_lists_json', 'pelican_javascript']
+
+# Plugin articles_list_json
+ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
+ARTICLES_LISTS_JSON_OUTPUT_ALL = 'all.json'
+ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = None
+ARTICLES_LISTS_JSON_LIMIT = None
+
 # Tema
 THEME = 'themes/bootstrap-4'
 
 # Lenguaje y zona horaria
 DEFAULT_LANG = 'es'
 TIMEZONE = 'America/Mexico_City'
-
-# Para desarrollo, los vinculos son relativos
-RELATIVE_URLS = True
 
 # Para desarrollo, se desactiva la paginacion
 DEFAULT_PAGINATION = False

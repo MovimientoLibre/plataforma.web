@@ -1,7 +1,0 @@
-{
-    "name": "Movimiento Libre plataforma.web",
-    "files": [ {
-        "filters": [ "*.py", "*.md", "*.js", "*.css", "*.html" ],
-        "recursive": 1
-    } ]
-}

@@ -1,6 +1,7 @@
 .directory
 .bashrc
 *.pyc
-__pycache__/
-output
+.vscode
+__pycache__
+output/
 venv/
